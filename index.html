@@ -1,8 +1,53 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Testing Website</title>
-  </head>
-  <body>
-    <h5 style = "font-size: 50px;">This website is intended for testing.</h5>
-  </body>
+    <head>
+        <title>Testing</title>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background-color: rgb(10, 50, 50);
+            }
+            .topbar {
+                width: 100vw;
+                height: 10vh;
+                display: flex;
+                align-items: center;
+                gap: 1vw;
+                background-color: rgb(100, 50, 50);
+            }
+            .topbar a {
+                color:rgb(10, 50, 50);
+                text-align: center;
+                font-size: 3vb;
+                text-decoration: none;
+                margin-right: 5px;
+                display: inline-block;
+                transition: 0.5s;
+            }
+            .topbar img {
+                width: 6vw;
+                height: 6vh;
+            }
+            .topbar a:hover, .topbar a.active {
+                color: chartreuse;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class = "topbar">
+                <a href="https://website-testing-2.github.io">
+                    <img src="./logo.svg">
+                </a>
+                <a href="https://website-testing-2.github.io">Commands</a>
+                <a href="https://website-testing-2.github.io">Status</a>
+                <a href="https://website-testing-2.github.io">Donate</a>
+                <a href="https://website-testing-2.github.io">Support Server</a>
+                <a href="https://website-testing-2.github.io">Terms of Use</a>
+                <a href="https://website-testing-2.github.io">Privacy Policy</a>
+            </nav>
+        </header>
+    </body>
 </html>
