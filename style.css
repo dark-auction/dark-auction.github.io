@@ -1,0 +1,30 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(10, 50, 50);
+}
+.topbar {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    background-color: rgb(100, 50, 50);
+}
+.topbar a {
+    color: rgb(10, 50, 50);
+    text-align: center;
+    font-size: 3vb;
+    text-decoration: none;
+    margin-right: 5px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.topbar img {
+    width: 6vw;
+    height: 6vh;
+}
+.topbar a:hover, .topbar a.active {
+    color: chartreuse;
+}
