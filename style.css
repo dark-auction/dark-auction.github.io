@@ -21,7 +21,10 @@ body {
     display: inline-block;
     transition: 0.5s;
 }
-.topbar a:hover, .topbar a.active {
+.topbar a.active {
+    color: rgb(120, 137, 157);
+}
+.topbar a:hover {
     color: rgb(120, 137, 157);
     text-decoration: overline underline;
     text-underline-offset: 1vb;
