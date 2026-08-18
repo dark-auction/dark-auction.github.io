@@ -1,4 +1,4 @@
-# website-testing-2.github.io
+# dark-auction.github.io
 
 **THIS WEBSITE IS CURRENTLY INTENDED FOR TESTING**
 
