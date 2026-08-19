@@ -1,37 +1,50 @@
-body {
+html, body {
+    width: 100%;
+    max-width: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(22, 39, 58);
-    overflow-x: hidden;
 }
 .banner {
     width: 100%;
     height: 25dvh;
     position: relative;
+    overflow: hidden;
 }
 .banner h1 {
-    color: black;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
     text-align: center;
-    font-size: clamp(2rem, 6vw, 4rem);
+    font-size: clamp(2rem, 16vw, 8rem);
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
     margin: 0;
     width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+    white-space: normal;
 }
 .banner img {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: fill;
+    object-fit: cover;
+    object-position: center;
 }
 .topbar {
     width: 100%;
     height: 10dvh;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     background-color: rgb(17, 28, 41);
     padding: 0 20px;
@@ -40,18 +53,14 @@ body {
 .topbar a {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-decoration: none;
-    margin-right: 5px;
     display: inline-block;
     transition: 0.5s ease;
+    cursor: pointer;
 }
 .topbar a:hover, .topbar a.active {
     color: rgb(120, 137, 157);
-}
-.topbar img {
-    height: 6dvh;
-    width: auto;
 }
 p {
     color: rgb(208, 211, 214);
